@@ -7,8 +7,32 @@ $(document).ready(function() {
         var paths = photo.data('photopath');
         console.log(paths);
 
+        // Clear Carousel - both indicators and inner
+        var carouselIndicators = document.getElementById("carousel-indicators");
+        while (carouselIndicators.hasChildNodes()) {  
+            carouselIndicators.removeChild(carouselIndicators.firstChild);
+        }
+
+        var carouselInner = document.getElementById("carousel-inner");
+        while (carouselInner.hasChildNodes()) {  
+            carouselInner.removeChild(carouselInner.firstChild);
+        }
+
+        var counter = 0;
         if(paths){
             paths.split(',').forEach(function(pathForPhoto) {
+
+                // CREATE THE CAROUSEL INDICATORS
+                // <li data-target="#modal-carousel" data-slide-to="0" class="active"></li>
+                var newCaroIndi = document.createElement('li');
+                newCaroIndi.setAttribute("data-target", "#modal-carousel");
+                newCaroIndi.setAttribute("data-slide-to", counter.toString());
+
+                carouselIndicators.appendChild(newCaroIndi);
+
+
+                // CREATE THE CAROUSEL ITEM
+                // First child get additional "active" class
 
                 var newCaroItem = document.createElement('div');
                 newCaroItem.className = 'carousel-item active';
@@ -19,10 +43,16 @@ $(document).ready(function() {
 
                 newCaroItem.appendChild(newImg);
 
+
+
                 document.getElementById('carousel-inner').appendChild(newCaroItem);
                 // $('carousel-inner').appendChild(newCaroItem);
 
             });
+
+            // First child get additional "active" class
+            carouselIndicators.firstChild.className = carouselIndicators.firstChild.className + " active";
+            carouselInner.firstChild.className = carouselInner.firstChild.className + " active";
 
             // $(modal-carousel > carousel-inner):first-child.addClass('active');
 
