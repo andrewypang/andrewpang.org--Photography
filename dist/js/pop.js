@@ -35,7 +35,7 @@ $(document).ready(function() {
                 // First child get additional "active" class
 
                 var newCaroItem = document.createElement('div');
-                newCaroItem.className = 'carousel-item active';
+                newCaroItem.className = 'carousel-item';
                 
                 var newImg = document.createElement('img');
                 newImg.src = pathForPhoto;
