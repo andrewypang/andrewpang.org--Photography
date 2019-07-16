@@ -36,14 +36,13 @@ $(document).ready(function() {
 
                 var newCaroItem = document.createElement('div');
                 newCaroItem.className = 'carousel-item';
+                newCaroItem.setAttribute("data-interval", "false");
                 
                 var newImg = document.createElement('img');
                 newImg.src = pathForPhoto;
                 newImg.className = 'd-block w-100';
 
                 newCaroItem.appendChild(newImg);
-
-
 
                 document.getElementById('carousel-inner').appendChild(newCaroItem);
                 // $('carousel-inner').appendChild(newCaroItem);
