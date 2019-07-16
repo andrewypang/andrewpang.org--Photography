@@ -218,4 +218,8 @@ body {
 .u-padding-bottom-big {
   padding-bottom: 8rem !important;
 }
+
+.card-multi {
+  background-color: red;
+}
 /*# sourceMappingURL=main.css.map */
