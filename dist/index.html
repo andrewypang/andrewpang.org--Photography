@@ -14,39 +14,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <h1><a class="navbar-brand" href="#">Photography</a></h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Astrophotography</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Check it
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Hong Kong</a>
-            <a class="dropdown-item" href="#">Japan</a>
-            <a class="dropdown-item" href="#">China</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <section id="header" class="jumbotron text-center">
+  <section id="header" class="jumbotron text-center align-middle">
     <h1 class="display-3">Japan</h1>
     <p class="lead">Tokyo, YO! <br>Canon FTb Film ISO 400</p>
   </section>
@@ -54,15 +23,14 @@
   <section id="gallery">
     <div class="container">
 
-      <!-- ROW 1 -->
+      <!-- Shibuya Crossing -->
       <div class="row">
 
-        <!-- Photo 1 -->
-        <div class="col-lg-4 mb-4">
-          <div class="card card-multi">
-            <a href="" data-toggle="modal" data-target="#lightboxModal"
-              data-photopath="japan/2019/shibuya-1-min.jpg, japan/2019/shibuya-2-min.jpg, japan/2019/shibuya-3-min.jpg, japan/2019/shibuya-4-min.jpg">
-              <img class="card-img-top pop" style="image-orientation: from-image;" src="japan/2019/shibuya-1-min.jpg"
+        <!-- Photo -->
+        <div class="col-lg-6 mb-4">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/shibuya-1-min.jpg">
+              <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/shibuya-1-min.jpg"
                 alt="">
             </a>
             <div class="card-body">
@@ -72,11 +40,72 @@
           </div>
         </div>
 
-        <!-- Photo 2 -->
+        <!-- Photo -->
+        <div class="col-lg-6 mb-4">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/shibuya-2-min.jpg">
+              <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/shibuya-2-min.jpg"
+                alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Shibuya Crossing</h5>
+              <p class="card-text">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="col-lg-12 mb-4">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/shibuya-3-min.jpg">
+              <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/shibuya-3-min.jpg"
+                alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Shibuya Crossing</h5>
+              <p class="card-text">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="col-lg-10 mb-4 ml-auto mr-auto">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/shibuya-4-min.jpg">
+              <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/shibuya-4-min.jpg"
+                alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Shibuya Crossing</h5>
+              <p class="card-text">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- END OF ROW -->
+
+      <!-- Shinjuku Gyoen National Garden -->
+      <div class="row">
+
+        <!-- Photo -->
         <div class="col-lg-4 mb-4">
-          <div class="card card-multi">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/raw/09940004.jpg">
+              <img class="card-img-top" src="japan/2019/raw/09940004.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Shinjuku Gyoen National Garden</h5>
+              <p class="card-text">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="col-lg-8 mb-4 d-flex align-items-center">
+          <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal"
-              data-photopath="japan/2019/shinjuku-gyoen-national-garden-1-min.jpg,japan/2019/shinjuku-gyoen-national-garden-2-min.jpg,japan/2019/shinjuku-gyoen-national-garden-3-min.jpg">
+              data-photopath="japan/2019/shinjuku-gyoen-national-garden-1-min.jpg">
               <img class="card-img-top" src="japan/2019/shinjuku-gyoen-national-garden-1-min.jpg" alt="">
             </a>
             <div class="card-body">
@@ -86,21 +115,34 @@
           </div>
         </div>
 
-        <!-- Photo 3 -->
-        <div class="col-lg-4 mb-4">
+        <!-- Photo -->
+        <div class="col-lg-8 mb-4 d-flex align-items-center">
           <div class="card">
-            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09940013-min.jpg">
-              <img class="card-img-top" src="japan/2019/09940013-min.jpg" alt="">
+            <a href="" data-toggle="modal" data-target="#lightboxModal"
+              data-photopath="japan/2019/shinjuku-gyoen-national-garden-3-min.jpg">
+              <img class="card-img-top" src="japan/2019/shinjuku-gyoen-national-garden-3-min.jpg" alt="">
             </a>
             <div class="card-body">
-              <h5 class="card-title">---</h5>
+              <h5 class="card-title">Shinjuku Gyoen National Garden</h5>
               <p class="card-text">Tokyo, Japan</p>
             </div>
           </div>
-
         </div>
 
-        <!-- END OF ROW 1 -->
+        <!-- Photo -->
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal"
+              data-photopath="japan/2019/shinjuku-gyoen-national-garden-2-min.jpg">
+              <img class="card-img-top" src="japan/2019/shinjuku-gyoen-national-garden-2-min.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Shinjuku Gyoen National Garden</h5>
+              <p class="card-text">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+
       </div>
       <!-- END OF ROW -->
 
@@ -108,45 +150,30 @@
       <div class="row">
 
         <!-- Photo -->
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09950035-min.jpg">
-              <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/09950035-min.jpg" alt="">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">---</h5>
-              <p class="card-text">Tokyo, Japan</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Photo -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-6 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09950031-min.jpg">
               <img class="card-img-top" src="japan/2019/09950031-min.jpg" alt="">
             </a>
             <div class="card-body">
-              <h5 class="card-title">---</h5>
+              <h5 class="card-title">Tokyo Tower</h5>
               <p class="card-text">Tokyo, Japan</p>
             </div>
           </div>
         </div>
 
         <!-- Photo -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-6 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09950036-min.jpg">
               <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/09950036-min.jpg" alt="">
             </a>
             <div class="card-body">
-              <h5 class="card-title">---</h5>
+              <h5 class="card-title">Tokyo Tower</h5>
               <p class="card-text">Tokyo, Japan</p>
             </div>
           </div>
         </div>
-
-
 
 
       </div>
@@ -187,25 +214,26 @@
       <!-- Digital Art Museum -->
       <div class="row">
         <!-- Photo -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4 mr-auto ml-auto">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970028-PS-min.jpg">
               <img class="card-img-top" src="japan/2019/09970028-PS-min.jpg" alt="">
             </a>
             <div class="card-body">
-              <h5 class="card-title">---</h5>
+              <h5 class="card-title">Mori Building Digital Art Museum</h5>
               <p class="card-text">Tokyo, Japan</p>
             </div>
           </div>
         </div>
+
         <!-- Photo -->
-        <div class="col-lg-8 mb-4">
+        <div class="col-lg-8 mb-4 d-flex align-items-center">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970030-PS-min.jpg">
               <img class="card-img-top" src="japan/2019/09970030-PS-min.jpg" alt="">
             </a>
             <div class="card-body">
-              <h5 class="card-title">---</h5>
+              <h5 class="card-title">Mori Building Digital Art Museum</h5>
               <p class="card-text">Tokyo, Japan</p>
             </div>
           </div>
@@ -217,7 +245,7 @@
       <div class="row">
 
         <!-- Photo -->
-        <div class="col-lg-6 mb-4">
+        <div class="col-lg-12 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09940032-min.jpg">
               <img class="card-img-top" src="japan/2019/09940032-min.jpg" alt="">
@@ -230,7 +258,7 @@
         </div>
 
         <!-- Photo -->
-        <div class="col-lg-6 mb-4">
+        <div class="col-lg-12 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09940034-min.jpg">
               <img class="card-img-top" src="japan/2019/09940034-min.jpg" alt="">
@@ -348,7 +376,7 @@
         </div>
 
         <!-- Photo -->
-        <div class="col-lg-12 mb-4">
+        <div class="col-lg-6 mb-4 ml-auto mr-auto">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09940020-min.jpg">
               <img class="card-img-top" src="japan/2019/09940020-min.jpg" alt="">
@@ -455,58 +483,15 @@
             </div>
           </div>
         </div>
-        
+
       </div>
       <!-- END OF ROW -->
 
-
-
-      <!-- ROW 4 -->
+      <!-- Food -->
       <div class="row">
 
-        <!-- Photo 10 -->
-
-
-        <!-- Photo 11 -->
-
-
-        <!-- Photo 12 -->
-
-      </div>
-
-      <!-- ROW 5 -->
-
-      <div class="row">
-
-        <!-- Photo 14 -->
-
-
-        <!-- Photo 15 -->
-
-
-
-
-      </div>
-
-      <!-- ROW 6 -->
-      <div class="row">
-
-        <!-- Photo 16 -->
-
-        <!-- Photo 17 -->
-
-        <!-- Photo 18 -->
-
-      </div>
-
-      <!-- ROW 7 -->
-      <div class="row">
-        <!-- Photo 19 -->
-
-        <!-- Photo 20 -->
-
-        <!-- Photo 21 -->
-        <div class="col-lg-4 mb-4">
+        <!-- Photo -->
+        <div class="col-lg-12 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09960022-min.jpg">
               <img class="card-img-top" src="japan/2019/09960022-min.jpg" alt="">
@@ -518,22 +503,13 @@
           </div>
         </div>
       </div>
+      <!-- END OF ROW -->
 
-      <!-- ROW 8 -->
+      <!-- Street Proformers -->
       <div class="row">
 
-        <!-- Photo 24 -->
-
-
-
-      </div>
-
-      <!-- ROW 9 -->
-      <div class="row">
-        <!-- Photo 25 -->
-
-        <!-- Photo 26 -->
-        <div class="col-lg-4 mb-4">
+        <!-- Photo -->
+        <div class="col-lg-6 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970007-min.jpg">
               <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/09970007-min.jpg" alt="">
@@ -544,8 +520,8 @@
             </div>
           </div>
         </div>
-        <!-- Photo 27 -->
-        <div class="col-lg-4 mb-4">
+        <!-- Photo -->
+        <div class="col-lg-6 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970008-min.jpg">
               <img class="card-img-top" style="image-orientation: from-image;" src="japan/2019/09970008-min.jpg" alt="">
@@ -556,12 +532,14 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- ROW 10 -->
+      </div>
+      <!-- END OF ROW -->
+
+      <!-- What a View -->
       <div class="row">
-        <!-- Photo 28 -->
-        <div class="col-lg-4 mb-4">
+        <!-- Photo -->
+        <div class="col-lg-12 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970017-min.jpg">
               <img class="card-img-top" src="japan/2019/09970017-min.jpg" alt="">
@@ -572,19 +550,14 @@
             </div>
           </div>
         </div>
-        <!-- Photo 29 -->
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970020-min.jpg">
-              <img class="card-img-top" src="japan/2019/09970020-min.jpg">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">---</h5>
-              <p class="card-text">Tokyo, Japan</p>
-            </div>
-          </div>
-        </div>
-        <!-- Photo 30 -->
+
+      </div>
+      <!-- END OF ROW -->
+
+      <!-- Framed -->
+      <div class="row">
+
+        <!-- Photo -->
         <div class="col-lg-4 mb-4">
           <div class="card">
             <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970023-min.jpg">
@@ -596,9 +569,35 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- ROW 11 -->
+        <!-- Photo -->
+        <div class="col-lg-8 mb-4">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09970020-min.jpg">
+              <img class="card-img-top" src="japan/2019/09970020-min.jpg">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">---</h5>
+              <p class="card-text">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="col-lg-12 mb-4">
+          <div class="card">
+            <a href="" data-toggle="modal" data-target="#lightboxModal" data-photopath="japan/2019/09940013-min.jpg">
+              <img class="card-img-top" src="japan/2019/09940013-min.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">---</h5>
+              <p class="card-text">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- END OF ROW -->
 
 
     </div>
