@@ -46,6 +46,7 @@ $(document).ready(function() {
             carouselIndicators.firstChild.className = carouselIndicators.firstChild.className + " active";
             carouselInner.firstChild.className = carouselInner.firstChild.className + " active";
 
+            // If it is a single photo instead of a collage
             if(counter == "1") {
                 carouselIndicators.style.display = "none";
                 document.getElementsByClassName('carousel-control-prev')[0].style.display = "none";

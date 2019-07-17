@@ -7,18 +7,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="css/main.css">
-  <title>Hello, world!</title>
+  <link rel="stylesheet" href="css/bootstrap4-harbor.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Astrophotography - Andrew Pang</title>
 </head>
 
 <body>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Astrophotography</h1>
-      <p class="lead">Solar Systems to Deep Space</p>
+      <p class="lead">Solar System to Deep Space</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+        <h2 class="">The Moon</h2>
+        <hr>
+
+      <!-- Photo -->
+      <div class="col-lg-4 mb-4">
+        <div class="card card-single">
+          <a href="" data-toggle="modal" data-target="#lightboxModal"
+            data-photopath="photos/solar-system/moon/highlights/Moon50Percent8x10Final.jpg">
+            <img class="card-img-top" style="image-orientation: from-image;"
+              src="photos/solar-system/moon/highlights/Moon50Percent8x10Final.jpg" alt="">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="col-lg-4 mb-4">
+          <div class="card card-single">
+            <a href="" data-toggle="modal" data-target="#lightboxModal"
+              data-photopath="photos/solar-system/moon/highlights/SuperBloodMoonTimelapseFinal.jpg">
+              <img class="card-img-top" style="image-orientation: from-image;"
+                src="photos/solar-system/moon/highlights/SuperBloodMoonTimelapseFinal.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Photo -->
+      <div class="col-lg-4 mb-4">
+          <div class="card card-single">
+            <a href="" data-toggle="modal" data-target="#lightboxModal"
+              data-photopath="photos/solar-system/moon/highlights/2019-05-17_Full-Moon_PS.jpg">
+              <img class="card-img-top" style="image-orientation: from-image;"
+                src="photos/solar-system/moon/highlights/2019-05-17_Full-Moon_PS.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Ordered List of Indicators -->
+            <ol id="carousel-indicators" class="carousel-indicators">
+              <li data-target="#modal-carousel" data-slide-to="0" class="active"></li>
+            </ol>
+            <!-- Carausel Main Body -- Where is Photo should be -->
+            <div id="carousel-inner" class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <!-- Next/Prev Buttons -->
+            <a class="carousel-control-prev" href="#modal-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#modal-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -33,6 +129,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+
+  <script type="text/javascript" src="js/pop.js"></script>
 </body>
 
 </html>
