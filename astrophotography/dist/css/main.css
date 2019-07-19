@@ -228,9 +228,13 @@ body {
 }
 
 .jumbotron {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 245, 0.6)), to(rgba(245, 245, 245, 0.6))), url(../img/home-banner.jpg);
-  background-image: linear-gradient(rgba(245, 245, 245, 0.6), rgba(245, 245, 245, 0.6)), url(../img/home-banner.jpg);
+  background-image: url(../resources/home-banner.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+  background-image: url(../resources/home-banner.jpg), linear-gradient(black, black);
   background-size: cover;
-  color: #292929;
+  background-position: 0% 55%;
+}
+
+.jumbotron__heading {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
