@@ -1,0 +1,7 @@
+.icon {
+    color: var(--dark, $color-black);
+
+    &:hover {
+        color: var(--gray, $color-grey);
+    }
+}

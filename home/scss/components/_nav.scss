@@ -1,0 +1,121 @@
+.nav {
+
+
+    &__item {
+        height: 30vw;
+    }
+
+    &__link::before {
+        content: "";
+        display: table;
+        clear: both;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color-grey, 0.5);
+        opacity: 0;
+        transition: all 0.5s ease;
+
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        position: relative;
+
+
+        &__heading {
+
+            @include absCenter;
+            transition: all 0.5s ease;
+
+            opacity: 0;
+        }
+
+        &:hover {
+
+            .nav__link__heading {
+                opacity: 1;
+            }
+
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &--astro {
+            background-image: url(../resources/img/astrophotography.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--japan {
+            background-image: url(../resources/img/japan.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--desert {
+            background-image: url(../resources/img/desert.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--film-neg {
+            background-image: url(../resources/img/film-neg.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--2016-japan {
+            background-image: url(../resources/img/2016-japan.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--grand-canyon {
+            background-image: url(../resources/img/grand-canyon.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--hike-views {
+            background-image: url(../resources/img/hike-views.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--hong-kong {
+            background-image: url(../resources/img/hong-kong.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--los-angeles {
+            background-image: url(../resources/img/los-angeles.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--pinhole-camera {
+            background-image: url(../resources/img/pinhole-camera.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        &--santa-cruz {
+            background-image: url(../resources/img/santa-cruz.jpg);
+            background-position: 50%;
+            background-size: cover;
+        }
+
+    }
+
+}

@@ -1,0 +1,68 @@
+.nav {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        width: 100%;
+        display: inline-block;
+        padding: 1rem 0;
+        font-size: inherit;
+        line-height: inherit;
+
+        &:nth-child(odd) {
+            background-color: $color-grey-light;
+        }
+    }
+
+    &-link {
+        width: auto;
+        display: inline-block;
+        padding: 1rem 0;
+        color: var(--dark, $color-black);
+
+    }
+
+    &-main{
+        padding: 0 1rem;
+        font-weight: 600;
+    }
+
+    &-sub {
+        font-size: 1.4rem;
+        padding-left: 1.5rem;
+    }
+
+    &-top {
+        background-color: $color-grey-light;
+        line-height: 4rem;
+        padding: 0 15px;
+    }
+
+    &-side {
+
+        &-footer {
+            margin: 10rem 0 4rem 0;
+        }
+    }
+
+}
+
+.collapsed {
+    #toggle-side {
+        transform: rotate(90deg);
+    }
+}
+
+#toggle-side {
+    transition: .3s transform ease-in-out;
+}
+
+
+.collapsing {
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    transition: all ease;
+  }

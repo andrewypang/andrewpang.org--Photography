@@ -1,0 +1,19 @@
+.icon {
+    color: var(--dark, $color-black);
+
+    &--small {
+        font-size: $icon-size-small;
+    }
+
+    &--medium {
+        font-size: $icon-size-medium;
+    }
+
+    &--large {
+        font-size: $icon-size-large;
+    }
+
+    &:hover {
+        color: var(--gray, $color-grey);
+    }
+}
