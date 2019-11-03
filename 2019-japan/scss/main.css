@@ -137,6 +137,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.row {
+  margin: 1rem 0;
+}
+
 body {
   font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
   font-weight: 400;
@@ -217,10 +221,6 @@ body {
 
 .u-padding-bottom-big {
   padding-bottom: 8rem !important;
-}
-
-.card-multi {
-  background-color: red;
 }
 
 .jumbotron {
