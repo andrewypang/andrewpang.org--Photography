@@ -223,6 +223,10 @@ body {
   padding-bottom: 8rem !important;
 }
 
+.card {
+  margin: 1rem 0;
+}
+
 .jumbotron {
   height: 40vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 245, 0.6)), to(rgba(245, 245, 245, 0.6))), url(../img/home-banner.jpg);
