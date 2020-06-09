@@ -137,8 +137,11 @@ body {
   scroll-behavior: smooth;
 }
 
-.row {
-  margin: 1rem 0;
+.container .row {
+  margin: 3rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body {
@@ -223,10 +226,29 @@ body {
   padding-bottom: 8rem !important;
 }
 
+.card {
+  margin: 1rem 0;
+}
+
 .jumbotron {
+  height: 40vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 245, 0.6)), to(rgba(245, 245, 245, 0.6))), url(../img/home-banner.jpg);
   background-image: linear-gradient(rgba(245, 245, 245, 0.6), rgba(245, 245, 245, 0.6)), url(../img/home-banner.jpg);
   background-size: cover;
+  background-position-y: 57%;
   color: #292929;
+  position: relative;
+}
+
+.jumbotron__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#gallery {
+  margin: 5rem auto;
 }
 /*# sourceMappingURL=main.css.map */
